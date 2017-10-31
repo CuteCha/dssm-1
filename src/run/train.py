@@ -14,7 +14,7 @@ FLAGS = flags.FLAGS
 
 flags.DEFINE_string('summaries_dir', '/tmp/dssm-v1', 'Summaries directory')
 flags.DEFINE_string('model_path', '../../model/dssm.ckpt', 'model path')
-flags.DEFINE_integer('max_epoch', 50000, 'max train steps')
+flags.DEFINE_integer('max_epoch', 5, 'max train steps')
 
 train_query, train_doc, train_label = data_provider.load_train_dataset()
 valid_query, valid_doc, valid_label = data_provider.load_valid_dataset()
