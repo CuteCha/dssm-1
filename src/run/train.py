@@ -12,7 +12,7 @@ sys.setdefaultencoding('utf8')
 flags = tf.app.flags
 FLAGS = flags.FLAGS
 
-flags.DEFINE_string('summaries_dir', '/tmp/dssm-v1', 'Summaries directory')
+flags.DEFINE_string('summaries_dir', '../../output/tmp/', 'Summaries directory')
 flags.DEFINE_string('model_path', '../../model/dssm.ckpt', 'model path')
 flags.DEFINE_integer('max_epoch', 5, 'max train steps')
 
